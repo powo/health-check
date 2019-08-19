@@ -10,7 +10,7 @@ from importlib import import_module
 __all__ = ['settings']
 
 
-class reset:
+class reset(object):
     def __init__(self, func, *args, **kwargs):
         self.func = func
         update_wrapper(self, func)
